@@ -4,11 +4,11 @@ var iOS7_TTS = {
  	{
  		cordova.exec(successCallback, failureCallback, 'iOS7_TTS', 'echo', [text]);
  	},
- 	pause: function(successCallback, failureCallback)
+ 	pauseSpeaking: function(successCallback, failureCallback)
  	{
  	  cordova.exec(successCallback, failureCallback, 'iOS7_TTS', 'speechSynthesizerPause');
  	}
- 	continue: function(successCallback, failureCallback)
+ 	continueSpeaking: function(successCallback, failureCallback)
  	{
  	  cordova.exec(successCallback, failureCallback, 'iOS7_TTS', 'speechSynthesizerContinue');
  	}
