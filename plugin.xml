@@ -36,7 +36,6 @@
         <framework src="Foundation.framework" />
         <framework src="CoreGraphics.framework" />
         <framework src="UIKit.framework" />
-        <framework src="XCTest.framework" />
 
     </platform>
 </plugin>
