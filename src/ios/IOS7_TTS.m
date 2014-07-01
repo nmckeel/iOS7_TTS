@@ -26,7 +26,7 @@ if (echo != nil && [echo length] > 0 ) {
 
         AVSpeechUtterance *utterance = [[AVSpeechUtterance alloc] initWithString:echo];
         utterance.rate = 0.20;
-        utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"en-gb"];
+        utterance.voice = [AVSpeechSynthesisVoice voiceWithLanguage:@"en-us"];
         [self.synthesizer speakUtterance:utterance];     
 
 
