@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.tt.ios7tts"
+    version="1">
+
+    <name>iOS7TTS</name>
+  <author>nom</author>
+
+  <description>
+   This plugin allows use of the native TTS functionality available in iOS7
+  </description>
+
+  <license></license>
+
+  <js-module src="www/iOS7_TTS.js" name="iOS7_TTS">
+      <clobbers target="iOS7_TTS" />
+  </js-module>
+
+  <engines>
+      <engine name="cordova" version="&gt;=3.0.0" />
+  </engines>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+          <feature name="iOS7_TTS">
+            <param name="ios-package" value="iOS7_TTS"/>
+          </feature>
+        </config-file>
+
+        <source-file src="src/ios/IOS7_TTS.m" />
+
+        <header-file src="src/ios/IOS7_TTS.h" />
+
+        <framework src="AVFoundation.framework" />
+        <framework src="Foundation.framework" />
+        <framework src="CoreGraphics.framework" />
+        <framework src="UIKit.framework" />
+        <framework src="XCTest.framework" />
+
+    </platform>
+</plugin>
